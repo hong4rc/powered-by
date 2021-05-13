@@ -1,0 +1,32 @@
+{
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "ignorePatterns": [
+    "dist/**/*.js"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-base",
+    "plugin:unicorn/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "unicorn"
+  ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": "off"
+  }
+}
