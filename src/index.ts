@@ -2,7 +2,7 @@ import {
   NextFunction, Request, RequestHandler, Response,
 } from 'express';
 
-export const POWERED_BY = 'X-Powered-By';
+export const POWERED_BY = 'x-powered-by';
 
 export const poweredBy = (value?: string): RequestHandler => (
   _request: Request, response: Response, next: NextFunction,
